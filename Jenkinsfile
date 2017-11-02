@@ -5,6 +5,10 @@ def temporaryDockerRegistry = tempDockerRegistry
 def permanentDockerRegistry = permDockerRegistry
 def nexusRepoHostPort = nexusRepositoryHost
 def nexusRepo = nexusRepository
+
+// This update is for Bug ID : 531
+def httpProxy = 'http://165.225.104.34:80'
+def httpsProxy = 'https://165.225.104.34:80'
   
 node {
   echo "Parameters"
